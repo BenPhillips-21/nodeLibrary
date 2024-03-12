@@ -16,7 +16,7 @@ var app = express();
 
 // view engine setup
 mongoose.set("strictQuery", false);
-const mongoDB = process.env.MONGODB_URI || dev_db_url
+const mongoDB = process.env.MONGODB_URI
 
 main().catch((err) => console.log(err));
 async function main() {
